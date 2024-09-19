@@ -27,10 +27,23 @@ In real-world FL scenarios, data across clients is often non-IID and imbalanced.
   pip install -r requirements.txt
 
 
-# Example configuration in conf.py
+# conf.py
+
+# Dataset selection
 dataset = 'cifar10'  # Choose from 'mnist', 'fmnist', 'cifar10', 'cifar100'
+
+# Federated Learning parameters
 num_clients = 20
 local_epochs = 5
+communication_rounds = 50
 learning_rate = 0.01
-alpha = 0.05
-...
+alpha = 0.05  # Dirichlet distribution parameter for data partitioning
+
+# Model and training configurations
+batch_size = 32
+optimizer = 'SGD'
+momentum = 0.9
+
+# Device configuration
+use_gpu = True
+gpu_device = 'cuda:0'  # Set to 'cpu' if GPU is not available
