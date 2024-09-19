@@ -25,3 +25,17 @@ In real-world FL scenarios, data across clients is often non-IID and imbalanced.
 - Required Python packages are listed in `requirements.txt`. Install them using:
   ```bash
   pip install -r requirements.txt
+
+
+FL-FCR/
+│
+├── conf.py                   # Configuration file
+├── FL-FCR Demo.ipynb         # Jupyter notebook for demo
+├── src/                      # Source code
+│   ├── train.py              # Training script
+│   ├── models.py             # Model architectures
+│   └── ...
+├── data/                     # Datasets
+├── models/                   # Saved models
+├── utils/                    # Utility functions
+└── requirements.txt          # Required Python packages
