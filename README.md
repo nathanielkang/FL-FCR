@@ -26,3 +26,11 @@ In real-world FL scenarios, data across clients is often non-IID and imbalanced.
   ```bash
   pip install -r requirements.txt
 
+
+# Example configuration in conf.py
+dataset = 'cifar10'  # Choose from 'mnist', 'fmnist', 'cifar10', 'cifar100'
+num_clients = 20
+local_epochs = 5
+learning_rate = 0.01
+alpha = 0.05
+...
