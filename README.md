@@ -27,6 +27,11 @@ In real-world FL scenarios, data across clients is often non-IID and imbalanced.
   pip install -r requirements.txt
 
 
+### Example Configuration in `conf.py`
+
+Adjust the configuration settings in `conf.py` to specify the dataset and other training parameters. Here is an example configuration:
+
+```python
 # conf.py
 
 # Dataset selection
@@ -47,3 +52,4 @@ momentum = 0.9
 # Device configuration
 use_gpu = True
 gpu_device = 'cuda:0'  # Set to 'cpu' if GPU is not available
+
