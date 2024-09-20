@@ -26,6 +26,14 @@ In real-world FL scenarios, data across clients is often non-IID and imbalanced.
   ```bash
   pip install -r requirements.txt
 
+## Acknowledgment
+
+Part of the skeleton of this code is derived from the following work:
+
+Luo, Mi, Chen, Fei, Hu, Dapeng, Zhang, Yifan, Liang, Jian, and Feng, Jiashi. *No fear of heterogeneity: classifier calibration for federated learning with non-IID data*. Proceedings of the 35th International Conference on Neural Information Processing Systems (NIPS '21). 
+
+Significant changes and additions have been made to adapt the code for our project.
+
 
 ### Example Configuration in `conf.py`
 
@@ -52,4 +60,5 @@ momentum = 0.9
 # Device configuration
 use_gpu = True
 gpu_device = 'cuda:0'  # Set to 'cpu' if GPU is not available
+
 
